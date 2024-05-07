@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(https://madloba.info/media/images/Entree_05.2e16d0ba.fill-1366x768.format-webp.mwtmk.webp);
+}
+
+.shop {
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 0 auto;
+}
+
+.img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+.img-cart {
+    max-width: 200px;
+    max-height: 200px;
+    margin: 0 auto;
+}
+
+.sanya {
+    background: #00ffaa;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 500px;
+    border: 3px solid #00ff08;
+}
+
+.black {
+    background: #757575;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 500px;
+    border: 3px solid #000;
+}
+
+.bird {
+    background: #ff002b;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    max-height: 500px;
+    border: 3px solid #ff0000;
+}
+
+.uk {
+    background: gold;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    max-height: 500px;
+    border: 3px solid #ffe100;
+}
+
+.button {
+    border: 2px solid #5d00ff;
+    width: 100px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.button-plus {
+    background: green;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+.button-minus {
+    background: red;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+
+.p-info {
+    font-family: "Carattere", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
