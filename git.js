@@ -136,16 +136,19 @@ console.log(getUserEmail(users))
 
 //Отримати масив користувачів, які потрапляють у вікову категорію від min до max років (поле age).
 const getUserAge = user => {
-    return user.filter(user => user.age > 0 && user.age < 100)
+    return user.filter(user => user.age > 25 && user.age < 70)
 }
 console.log(getUserAge(users))
 
 
 //Отримати загальну суму балансу (поле balance) всіх користувачів.
-const getUserBalance = user => {
-    return user.reduce((acc, user) => acc + user.balance, 0)
-}
-console.log(getUserBalance(users))
+let usersBalance = 0
+
+users.forEach(user => {
+    usersBalance += user.balance
+})
+
+console.log(usersBalance)
 
 
 //Масив імен всіх користувачів у яких є друг із зазначеним ім'ям.
