@@ -1,12 +1,3 @@
-//Створено репозиторій goit-js
-//Всі завдання виконані в одному файлі, в який імпортується масив користувачів.
-//Імена змінних зрозумілі, описові
-//Код відформатований за допомогою Prettier
-
-
-//Напиши функції які за допомогою перебираючих методів масиву (ніяких for, splice і т. д.) 
-//виконують наступні операції над масивом об'єктів користувачів з файлу
-
 const users = [
     {
         id: '701b29c3-b35d-4cf1-a5f6-8b12b29a5081',
@@ -92,7 +83,18 @@ const users = [
         gender: 'female',
         age: 39,
     },
-];
+]
+//Створено репозиторій goit-js
+//Всі завдання виконані в одному файлі, в який імпортується масив користувачів.
+//Імена змінних зрозумілі, описові
+//Код відформатований за допомогою Prettier
+
+
+//Напиши функції які за допомогою перебираючих методів масиву (ніяких for, splice і т. д.) 
+//виконують наступні операції над масивом об'єктів користувачів з файлу
+
+
+
 
 //Отримати масив імен всіх користувачів (поле name).
 const getUserName = user => {
@@ -109,14 +111,11 @@ const getUsereyeColor = user => {
 console.log(getUsereyeColor(users))
 
 
-
 //Отримати масив імен користувачів за статтю (поле gender)
 const getUserGender = user => {
     return user.map(user => user.gender)
 }
 console.log(getUserGender(users))
-
-
 
 
 //Отримати масив тільки неактивних користувачів (поле isActive).
@@ -135,6 +134,28 @@ console.log(getUserEmail(users))
 
 
 
+//Отримати масив користувачів, які потрапляють у вікову категорію від min до max років (поле age).
+const getUserAge = user => {
+    return user.filter(user => user.age > 0 && user.age < 100)
+}
+console.log(getUserAge(users))
 
 
-//
+//Отримати загальну суму балансу (поле balance) всіх користувачів.
+const getUserBalance = user => {
+    return user.reduce((acc, user) => acc + user.balance, 0)
+}
+console.log(getUserBalance(users))
+
+
+//Масив імен всіх користувачів у яких є друг із зазначеним ім'ям.
+const getUserFriends = user => {
+    return user.filter(user => user.friends.includes('Briana Decker'))
+}
+console.log(getUserFriends(users))
+
+
+//Масив імен (поле name) людей, відсортованих в залежності від кількості їх друзів (поле friends)
+
+
+//Отримати масив всіх умінь всіх користувачів (поле skills), при цьому не має бути повторюваних умінь і вони повинні бути відсортовані в алфавітному порядку.
