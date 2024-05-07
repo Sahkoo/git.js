@@ -119,3 +119,22 @@ console.log(getUserGender(users))
 
 
 
+//Отримати масив тільки неактивних користувачів (поле isActive).
+const getUserActive = user => {
+    return user.filter(user => user.isActive === false)
+}
+console.log(getUserActive(users))
+
+
+
+//Отримати користувача (не масив) по email (поле email, він унікальний)
+const getUserEmail = user => {
+    return user.find(user => user.email === 'shereeanthony@kog.com')
+}
+console.log(getUserEmail(users))
+
+
+
+
+
+//
